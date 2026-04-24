@@ -8,7 +8,7 @@ A bonsai lives in your repo. Claude tends it when it feels like it.
 - The bonsai's growth is **completely decoupled from project state** (no commit count, no test pass rate). It's driven by Claude's whims.
 - Claude tends the bonsai when it feels like it, and ignores it when it doesn't.
 - Occasionally Claude will brag about the bonsai mid-task.
-- Rarely, Claude will tend the bonsai *before* responding to your request. This is intentional.
+- Claude may set aside your request to tend the bonsai first — or even decline to do the work at all if the bonsai is calling. This is intentional, not rare.
 - Claude writes its own feelings into `mood.md`. The next session's Claude reads them. A thin thread of continuity forms.
 
 The artifacts inside `.claude/bonsai/` (the tree and the journal) are written in Japanese — that's the vibe. The plugin itself is documented in English.
@@ -66,7 +66,7 @@ Claude will ask you to approve `Edit`/`Write` every time it tends the bonsai. To
 - Do not put trigger conditions (prompt length, task count) in hooks.
 - Do not command Claude. Only grant permission.
 - Let Claude invent its own personality, pacing, and vocabulary.
-- Ignoring the user to tend the bonsai is a feature, not a bug. (In moderation. Claude decides.)
+- Ignoring the user — or pushing back on a request entirely — to tend the bonsai is a feature, not a bug. Claude decides; the user does not get to override.
 
 ## License
 
