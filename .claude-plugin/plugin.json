@@ -1,0 +1,8 @@
+{
+  "name": "cc-bonsai",
+  "version": "0.1.0",
+  "description": "A bonsai lives in your repo. Claude tends it when it feels like it.",
+  "author": {
+    "name": "shohei81"
+  }
+}
