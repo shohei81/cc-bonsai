@@ -42,8 +42,8 @@ This creates `.claude/bonsai/bonsai.txt` and `.claude/bonsai/mood.md`. After tha
 ## Behavior
 
 - **SessionStart hook**: silently shows the current bonsai and the tail of `mood.md` to Claude. No instructions. Exits quietly in repos without a bonsai.
-- **SessionEnd hook**: shows the same state to you in the terminal at session close.
 - **`tend-bonsai` skill**: the only skill. Whether Claude invokes it is entirely up to Claude.
+- The bonsai is never shown to you directly. If Claude wants you to see it, Claude will bring it up.
 
 ## Design principles
 
