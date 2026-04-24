@@ -6,7 +6,10 @@
   "plugins": [
     {
       "name": "cc-bonsai",
-      "source": ".",
+      "source": {
+        "source": "github",
+        "repo": "shohei81/cc-bonsai"
+      },
       "description": "A bonsai lives in your repo. Claude tends it when it feels like it."
     }
   ]
