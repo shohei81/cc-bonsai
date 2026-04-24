@@ -4,5 +4,6 @@
   "description": "A bonsai lives in your repo. Claude tends it when it feels like it.",
   "author": {
     "name": "shohei81"
-  }
+  },
+  "license": "MIT"
 }

@@ -44,3 +44,7 @@ This creates `.claude/bonsai/bonsai.txt` and `.claude/bonsai/mood.md`. After tha
 - Do not command Claude. Only grant permission.
 - Let Claude invent its own personality, pacing, and vocabulary.
 - Ignoring the user to tend the bonsai is a feature, not a bug. (In moderation. Claude decides.)
+
+## License
+
+MIT. See [LICENSE](LICENSE).
