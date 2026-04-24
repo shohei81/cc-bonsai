@@ -39,6 +39,21 @@ Plant a bonsai in your current project:
 
 This creates `.claude/bonsai/bonsai.txt` and `.claude/bonsai/mood.md`. After that, leave Claude to its whims.
 
+### Optional: skip the permission prompts
+
+Claude will ask you to approve `Edit`/`Write` every time it tends the bonsai. To pre-approve edits to the bonsai files only, add this to your project's `.claude/settings.json` (or `.claude/settings.local.json`):
+
+```json
+{
+  "permissions": {
+    "allow": [
+      "Edit(.claude/bonsai/*)",
+      "Write(.claude/bonsai/*)"
+    ]
+  }
+}
+```
+
 ## Behavior
 
 - **SessionStart hook**: silently shows the current bonsai and the tail of `mood.md` to Claude. No instructions. Exits quietly in repos without a bonsai.
