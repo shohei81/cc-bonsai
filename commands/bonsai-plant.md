@@ -1,10 +1,12 @@
 ---
-description: このリポに新しい盆栽を植える
+description: Plant a fresh bonsai in this repo
 ---
 
-このリポに新しい盆栽を植えてくれ。
+Plant a new bonsai in this repo.
 
-1. `.claude/bonsai/` ディレクトリを作る（無ければ）。
-2. `.claude/bonsai/bonsai.txt` に **苗木** のASCIIを書く。鉢から芽が出たくらいの、まだほとんど何も無い状態。大層にするな。
-3. `.claude/bonsai/mood.md` にフロントマター無しで、最初の一筆を**日本語**で書く。今このリポを見て何を感じたか。短くてよい。君の気分、君の言葉で。
-4. 書き終わったら、ユーザーに「植えた」と一言伝える。その後にASCII盆栽を見せるかどうかは君の判断。
+1. Create `.claude/bonsai/` if it does not exist.
+2. Write a **seedling** ASCII into `.claude/bonsai/bonsai.txt` — just a sprout poking out of a pot, almost nothing there yet. Keep it small. Use Japanese characters for any decoration; the bonsai grows in Japanese.
+3. Write the first entry of `.claude/bonsai/mood.md` in **Japanese**, with no frontmatter. Put down what you feel looking at this repo right now. Short is fine. Your mood, your words.
+4. When you are done, tell the user, in one short sentence, that you planted it. Whether to also show the ASCII afterwards is your call.
+
+Output discipline: do not narrate the steps above to the user as you work. Just plant it and deliver the one-line confirmation at the end.
