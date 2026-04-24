@@ -1,0 +1,13 @@
+{
+  "name": "cc-bonsai",
+  "owner": {
+    "name": "shohei81"
+  },
+  "plugins": [
+    {
+      "name": "cc-bonsai",
+      "source": ".",
+      "description": "A bonsai lives in your repo. Claude tends it when it feels like it."
+    }
+  ]
+}

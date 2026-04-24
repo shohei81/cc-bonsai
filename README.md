@@ -15,10 +15,18 @@ The artifacts inside `.claude/bonsai/` (the tree and the journal) are written in
 
 ## Install
 
-Add this repo as a Claude Code plugin:
+Add the marketplace, then install the plugin:
 
 ```
-/plugin install <path-to-cc-bonsai>
+/plugin marketplace add shohei81/cc-bonsai
+/plugin install cc-bonsai@cc-bonsai
+```
+
+Or, if you've cloned the repo locally:
+
+```
+/plugin marketplace add <path-to-cc-bonsai>
+/plugin install cc-bonsai@cc-bonsai
 ```
 
 ## Use
