@@ -7,8 +7,8 @@
     {
       "name": "cc-bonsai",
       "source": {
-        "source": "github",
-        "repo": "shohei81/cc-bonsai"
+        "source": "url",
+        "url": "https://github.com/shohei81/cc-bonsai.git"
       },
       "description": "A bonsai lives in your repo. Claude tends it when it feels like it."
     }
