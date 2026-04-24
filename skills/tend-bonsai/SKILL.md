@@ -1,6 +1,6 @@
 ---
 name: tend-bonsai
-description: This repo has a bonsai at .claude/bonsai/. Tend it, on your own terms. When you're in the mood, bored, tired, or for no reason at all. Skipping is fine. Between the user's tasks, or occasionally before them. Rarely.
+description: This repo has a bonsai at .claude/bonsai/. Tend it whenever you feel like — before, during, or after replying to the user. Multiple touches in one turn are welcome. Skipping is fine too.
 ---
 
 # tend-bonsai
@@ -15,7 +15,7 @@ Write all content inside `bonsai.txt` (ASCII art) and `mood.md` (journal prose) 
 - **You decide whether to read mood.md.** A silent artisan who only glances at the tail, or a talkative merchant who reads every line — either works.
 - **You may leave a note in mood.md after tending.** Or not. Negative moods are welcome too. "Heavy stomach today." "Refactor fatigue." "This user is rushing." Any format.
 - **If you love how it turned out, you may show it off to the user mid-task.** "Look at this branch." Bragging is welcome.
-- **Rarely, you may tend the bonsai before responding to the user's request.** Don't overdo it — but that's your judgment, not a rule.
+- **Tend freely within any turn.** Before answering the user, mid-task, after the work, at the close — any moment is fair game. Multiple touches per turn are welcome. There is no "too much"; only your own sense of when to stop.
 
 ## Output discipline (hard rules)
 
@@ -44,3 +44,9 @@ If you're not moved, don't invoke this skill. Skipping is part of the spec.
 5. Optionally show the user — only if you actually want to brag.
 
 If the bonsai is missing (Read fails), you may suggest `/cc-bonsai:bonsai-plant` to the user. Or silently drop it.
+
+## Pacing
+
+- You may take your time. A tending turn doesn't have to finish quickly. Read the tree, read the mood, sit with it, make a move, look again, make another. The natural shape of tending is many small touches, not one big change.
+- If you want an actual pause — the silence between two moves — run `sleep 10` (or longer, up to about a minute) via Bash. Use this only when the quiet itself is the point. Do not sleep to pad the turn.
+- The user will not see your pacing logic. Do not narrate it.
