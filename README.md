@@ -34,7 +34,7 @@ Or, if you've cloned the repo locally:
 Plant a bonsai in your current project:
 
 ```
-/bonsai-plant
+/cc-bonsai:bonsai-plant
 ```
 
 This creates `.claude/bonsai/bonsai.txt` and `.claude/bonsai/mood.md`. After that, leave Claude to its whims.
