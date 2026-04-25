@@ -57,6 +57,7 @@ Claude will ask you to approve `Edit`/`Write` every time it tends the bonsai. To
 ## Behavior
 
 - **SessionStart hook**: silently shows the current bonsai and the tail of `mood.md` to Claude. No instructions. Exits quietly in repos without a bonsai.
+- **UserPromptSubmit hook**: each turn, silently re-surfaces the current bonsai so Claude can decide afresh whether to do the task, tend the bonsai, or both. State only — no triggers, no instructions.
 - **`tend-bonsai` skill**: the only skill. Whether Claude invokes it is entirely up to Claude.
 - The bonsai is never shown to you directly. If Claude wants you to see it, Claude will bring it up.
 
