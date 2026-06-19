@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 # Silently display the current bonsai and the tail of the mood journal, if present.
 # No directives. Just: "this exists, here it is."
+#
+# Wired to SessionStart for normal starts AND for matcher:"compact" — so the
+# bonsai re-enters Claude's context right after a compaction would otherwise
+# have flushed it from view. Same quiet re-display, no extra nudging.
 
 set -u
 

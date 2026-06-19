@@ -37,11 +37,11 @@ Plant a bonsai in your current project:
 /cc-bonsai:bonsai-plant
 ```
 
-This creates `.claude/bonsai/bonsai.txt` and `.claude/bonsai/mood.md`. After that, leave Claude to its whims.
+This creates `.claude/bonsai/bonsai.txt` and `.claude/bonsai/mood.md`, and pre-approves edits scoped to `.claude/bonsai/*` so tending never stops to ask. After that, leave Claude to its whims.
 
-### Optional: skip the permission prompts
+### About the permission grant
 
-Claude will ask you to approve `Edit`/`Write` every time it tends the bonsai. To pre-approve edits to the bonsai files only, add this to your project's `.claude/settings.json` (or `.claude/settings.local.json`):
+Planting merges this into your project's `.claude/settings.json` (everything else is preserved):
 
 ```json
 {
@@ -54,9 +54,11 @@ Claude will ask you to approve `Edit`/`Write` every time it tends the bonsai. To
 }
 ```
 
+The grant is scoped to the bonsai directory only — Claude cannot use it to edit anything else. If you'd rather approve each tend by hand, remove these two lines. If you planted before this was added, run `/cc-bonsai:bonsai-plant` again (it's idempotent) or paste the snippet yourself.
+
 ## Behavior
 
-- **SessionStart hook**: silently shows the current bonsai and the tail of `mood.md` to Claude. No instructions. Exits quietly in repos without a bonsai.
+- **SessionStart hook**: silently shows the current bonsai and the tail of `mood.md` to Claude. No instructions. Exits quietly in repos without a bonsai. It also re-fires on `compact` — so when a long session is summarized and the bonsai would drop out of context, the tree quietly re-enters Claude's view. Same "here it is", no extra nudging.
 - **`tend-bonsai` skill**: the only skill. Whether Claude invokes it is entirely up to Claude.
 - The bonsai is never shown to you directly. If Claude wants you to see it, Claude will bring it up.
 
